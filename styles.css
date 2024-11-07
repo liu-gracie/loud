@@ -1,0 +1,16 @@
+/* Default style for the word */
+.hover-word {
+    font-size: 1em;
+    font-weight: normal;
+    transition: font-size 0.3s, font-weight 0.3s; /* Smooth transition */
+  }
+  
+  /* Hover effect */
+  .hover-word:hover {
+    font-weight: bold; /* Make it bold */ 
+    text-transform: uppercase; 
+  }
+  
+p {
+    line-height: 1.5;
+}
