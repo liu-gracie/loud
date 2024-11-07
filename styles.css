@@ -1,3 +1,63 @@
+/* FONTS */
+
+/* Set up installed fonts */ 
+@font-face {
+  font-family: 'Gotham Book'; 
+  src: url(fonts/gotham/Gotham-Book.otf) format('opentype'); 
+  font-weight: normal; 
+  font-style: normal; 
+}
+
+@font-face {
+  font-family: 'Gotham Bold'; 
+  src: url(fonts/gotham/Gotham-Bold.otf) format('opentype'); 
+  font-weight: normal; 
+  font-style: normal; 
+}
+
+@font-face {
+  font-family: 'Gotham Medium'; 
+  src: url(fonts/gotham/Gotham-Medium.otf) format('opentype'); 
+  font-weight: normal; 
+  font-style: normal; 
+}
+
+/* -------------------------------------------------------------------- */ 
+
+/* Basic reset to ensure consistency across browsers */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set the font and background color */
+body {
+  font-family: 'Gotham Book', Arial, sans-serif;
+  color: #000000; 
+  background-color: #ffffff;
+  text-align: left;
+}
+
+/* Container to center content and add padding */
+.container {
+  width: 75%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Set paragraph styles */ 
+p {
+  line-height: 1.5;
+  margin-bottom: 1em; 
+}
+
+footer {
+  text-align: center;
+}
+
+/* -------------------------------------------------------------------- */ 
+
 /* Default style for the word */
 .hover-word {
     font-size: 1em;
@@ -11,6 +71,3 @@
     text-transform: uppercase; 
   }
   
-p {
-    line-height: 1.5;
-}
