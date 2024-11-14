@@ -36,7 +36,8 @@ body {
   font-family: 'Gotham Book', Arial, sans-serif;
   color: #000000; 
   background-color: #ffffff;
-  text-align: left;
+  text-align: left;  /* Keep text aligned to the left */
+  min-height: 100vh; /* Ensure the body takes up full height */
 }
 
 /* Container to center content and add padding */
@@ -58,16 +59,54 @@ footer {
 
 /* -------------------------------------------------------------------- */ 
 
+/* Style for the Start screen (Centering just the buttons) */
+.start-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh; /* Full viewport height */
+  background-color: #f5f5f5;
+  width: 100%;
+}
+
+/* Style for the Start and Return buttons */
+button {
+  display: inline-block;
+  padding: 1em 2em;
+  font-family: 'Gotham Medium', Arial, sans-serif;
+  background-color: #A6A6A6;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s ease-in-out; 
+  text-align: center;
+}
+
+/* Hover effect for the buttons */
+button:hover {
+  background-color: #5b5b5b;
+  transform: scale(1); /* Slightly scale the button */
+}
+
+/* Style for the Main content */
+#main-content {
+  display: none;
+  text-align: left; /* Ensure text is left-aligned in main content */
+}
+
+/* -------------------------------------------------------------------- */ 
+
 /* Default style for the word */
 .hover-word {
     font-size: 1em;
     font-weight: normal;
     transition: font-size 0.3s, font-weight 0.3s; /* Smooth transition */
-  }
+}
   
-  /* Hover effect */
-  .hover-word:hover {
+/* Hover effect */
+.hover-word:hover {
     font-weight: bold; /* Make it bold */ 
     text-transform: uppercase; 
-  }
-  
+}
