@@ -1,10 +1,26 @@
-// Create a new Audio object to load the sound file
-const hoverSound = new Audio('sounds/hover-sound.mp3');
+// Create new Audio objects for both sound files
+const hoverSound1 = new Audio("sounds/hover_sound1.mp3");
+const hoverSound2 = new Audio("sounds/hover_sound2.mp3");
+const hoverSound3 = new Audio("sounds/hover_sound3.mp3");
 
-// Function to play the sound
+// Function to play a random hover sound
 function playHoverSound() {
-    hoverSound.currentTime = 0; // Reset the sound to the beginning in case it was playing
-    hoverSound.play(); // Play the sound
+    // Randomly choose between 0, 1, or 2
+    const randomSound = Math.floor(Math.random() * 3);  // Will give 0, 1, or 2
+
+    // Play the corresponding sound based on the random selection
+    let soundToPlay;
+    if (randomSound === 0) {
+        soundToPlay = hoverSound1;
+    } else if (randomSound === 1) {
+        soundToPlay = hoverSound2;
+    } else {
+        soundToPlay = hoverSound3;
+    }
+
+    // Reset the sound to the beginning in case it was playing
+    soundToPlay.currentTime = -1;
+    soundToPlay.play();
 }
 
 // Function to wrap words in a <span> tag
