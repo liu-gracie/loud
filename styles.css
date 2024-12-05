@@ -47,6 +47,11 @@ body {
   padding: 20px;
 }
 
+/* Set title styles */ 
+h1 {
+  padding-top: 40px;
+}
+
 /* Set paragraph styles */ 
 p {
   line-height: 1.5;
@@ -87,7 +92,7 @@ button {
 /* Hover effect for the buttons */
 button:hover {
   background-color: #5b5b5b;
-  transform: scale(1); /* Slightly scale the button */
+  transform: scale(1.1); /* Slightly scale the button */
 }
 
 /* Style for the Main content */
